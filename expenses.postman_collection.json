@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "ff724b71-f596-4e37-b550-cce102206db0",
+		"name": "expenses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create an expense",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Fruits\",\n    \"date\": \"2020-07-27T20:30:45.025Z\",\n    \"amount\": 101.20\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an expense",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Fruits Updated\",\n    \"date\": \"2020-07-22T20:30:45.025Z\",\n    \"amount\": 100.20\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/expense/5f1f938852802e023c7e2fb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expense",
+						"5f1f938852802e023c7e2fb1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch an expense",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/expense/5f1f938852802e023c7e2fb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expense",
+						"5f1f938852802e023c7e2fb1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an expense",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/expense/5f1f8fff46827301eaeabb80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expense",
+						"5f1f8fff46827301eaeabb80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch all expenses",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/expenses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
